@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 require_relative 'utils'
-class DisplayHash
+class FoodHub
   include Utils
   attr_accessor :restaurants
 
@@ -64,7 +64,7 @@ restaurants = [
   { name: 'Einstein', cuisine: 'Bagels', price: 10.5 },
   { name: 'Mountain Mike', cuisine: 'Pizza', price: 10.95 }
 ]
-my_hash = DisplayHash.new(restaurants)
+my_hash = FoodHub.new(restaurants)
 
 # my_hash.display
 my_hash.add({ name: 'Local', cuisine: 'Cherreh', price: 6.00 })
